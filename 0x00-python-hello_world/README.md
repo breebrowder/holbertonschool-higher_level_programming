@@ -1,6 +1,6 @@
-### Requirements
+## Requirements
 
-## Python Scripts
+### Python Scripts
 * Allowed editors: vi, vim, emacs
 * All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 * All your files should end with a new line
@@ -18,7 +18,7 @@
 * The first line of all your files should be exactly #!/bin/bash
 * All your files must be executable
 
-## C Scripts
+### C Scripts
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 14.04 LTS
 * Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
@@ -34,19 +34,20 @@
 ## Install PEP8
 Pycodestyle is now the new standard of Python style code, but at school we will use PEP8, version 1.7.* Dont worry, pycodestyle is based on pep8. The hardest part now is to install it for Python 3:
 
-# Regular Ubuntu 14.04 install
+### Regular Ubuntu 14.04 install
 ```
 $ sudo apt-get install python3-pep8
 ```
-# Using Pip3
+### Using Pip3
 
-Install Pip3
+### Install Pip3
 ```
 $ sudo apt-get install python3-pip
 ```
-Install Pep8
+### Install Pep8
 ```
 $ sudo apt-get install python3-pip
+```
 ```
 $ sudo pip3 install -Iv pep8==1.7.0
 ```

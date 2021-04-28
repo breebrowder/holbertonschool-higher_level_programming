@@ -4,4 +4,4 @@ for leftnum in range(0, 10):
         if leftnum == 8 and rightnum == 9:
             print("{:d}{:d}".format(leftnum, rightnum))
         else:
-            print("{:d}{:d}".format(leftnum, rightnum), end= ", ")
+            print("{:d}{:d}".format(leftnum, rightnum), end=", ")

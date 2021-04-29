@@ -2,7 +2,7 @@
 def fizzbuzz():
     for digit in range(1, 101):
 
-        if (digit % 3 == 0) and (digit % 5 == 0):
+        if digit % 3 == 0 and digit % 5 == 0:
             print("FizzBuzz", end=" ")
 
         if (digit % 3 == 0):
@@ -12,4 +12,4 @@ def fizzbuzz():
             print("Buzz", end=" ")
 
         else:
-            print((digit), end=" ")
+            print(digit, end=" ")

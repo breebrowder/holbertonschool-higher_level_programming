@@ -1,8 +1,7 @@
-#!/user/bin/python3
-""" Just a simple class"""
+#!/usr/bin/python3
+""" A simple class"""
 
 
 class Square:
-
-    """ And an empty class"""
+    """ An empty class."""
     pass

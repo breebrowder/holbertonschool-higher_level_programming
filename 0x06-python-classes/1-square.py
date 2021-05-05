@@ -5,5 +5,5 @@
 class Square:
     """ HEAD SQUARE """
     def __init__(self, size):
-        """ Init size variable """
+        """ Init size attribute """
         self.__size = size

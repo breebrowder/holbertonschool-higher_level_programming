@@ -66,6 +66,6 @@ class Rectangle:
                 tmp += "#"
             else:
                 if i == self.height - 1:
-                break
+                    break
                 tmp += "\n"
         return tmp

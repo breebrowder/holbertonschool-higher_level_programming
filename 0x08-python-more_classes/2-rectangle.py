@@ -54,7 +54,7 @@ class Rectangle:
             if self.height == 0:
                 return 0
 
-        perimeter = 2 * (self.__width + self.__height)
+        perimeter = 2 * (self.__height + self.__width)
         return perimeter
 
         """ Sometimes you have to google how to find the perimeter of

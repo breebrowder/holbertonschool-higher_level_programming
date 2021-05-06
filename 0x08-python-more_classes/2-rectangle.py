@@ -48,11 +48,11 @@ class Rectangle:
         return(squared_x2)
 
     def perimeter(self):
-        if self.width == 0
-        return 0
+        if self.width == 0:
+            return 0
 
-        if self.height == 0:
-        return 0
+            if self.height == 0:
+                return 0
 
         perimeter = 2 * (self.__height + self.__width)
         return perimeter

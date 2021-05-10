@@ -8,7 +8,7 @@ class Rectangle:
     in wrapper """
 
     number_of_instances = 0
-
+    """ Adding two public attributes """
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):

@@ -68,10 +68,10 @@ class Rectangle:
             return ""
         for i in range(self.height):
             for j in range(self.width):
-                tango += str(self.print_symbol)
+                tmp += str(self.print_symbol)
                 if i != self.height - 1:
-                    tango += "\n"
-                    return tango
+                    tmp += "\n"
+                    return tmp
 
     def __repr__(self):
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)

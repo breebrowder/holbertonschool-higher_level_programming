@@ -14,6 +14,7 @@ class Rectangle:
         instance as the first arg: self; self handles all instances """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):

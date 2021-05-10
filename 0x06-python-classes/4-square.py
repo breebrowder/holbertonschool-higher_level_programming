@@ -11,7 +11,7 @@ class Square:
       reference to the new object being created """
 
     def __init__(self, size=0):
-        """ Init of private size variable"""
+        """ Init of private size variable """
 
         self.__size = size
 

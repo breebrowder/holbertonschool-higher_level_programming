@@ -68,12 +68,10 @@ class Rectangle:
             return ""
         for i in range(self.height):
             for j in range(self.width):
-                tmp += "#"
-            else:
-                if i == self.height - 1:
-                    break
-                tmp += "\n"
-        return tmp
+                tango += str(self.print_symbol)
+                if i != self.height - 1:
+                    tango += "\n"
+                    return tango
 
     def __del__(self):
         print("Bye rectangle...")

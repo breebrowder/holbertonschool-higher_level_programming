@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" module defining class: write a class that inherits from previous task """
+""" Module defining class: write a class that inherits from previous task """
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 

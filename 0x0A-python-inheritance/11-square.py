@@ -8,9 +8,9 @@ class Square(Rectangle):
     """Instantiation with constructor """
     def __init__(self, size):
         self.integer_validator("size", size)
-        self.__size = size
         self.__width = size
         self.__height = size
+        self.__size = size
 
     def area(self):
         return self.__width * self.__height

@@ -3,7 +3,7 @@
 
 
 def is_kind_of_class(obj, a_class):
-    """ methid that returns true or false """
+    """ method that returns true or false """
 
     if isinstance(obj, a_class) is False:
         return False

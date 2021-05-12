@@ -4,7 +4,8 @@
 
 def is_same_class(obj, a_class):
     """ our function """
+
     if type(obj) is not a_class:
         return False
 
-        return True
+    return True

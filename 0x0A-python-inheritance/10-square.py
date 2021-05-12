@@ -1,4 +1,4 @@
-#!/usr/in/python3
+#!/usr/bin/python3
 """ write a class that inherits another class """
 
 Rectangle = __import__('9-rectangle').Rectangle

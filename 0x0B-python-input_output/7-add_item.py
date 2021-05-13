@@ -1,21 +1,18 @@
 #!/usr/bin/python3
+""" Script that adds all args to a Python list, then save them to a file """
 
-if __name__ == "__main__":
-
-    import sys
-    import json
+import sys
+from os import path
 
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
+if path.exists("add_item.json"):
+    List = load_from_json_file('add_item.json')
+else:
+    List = []
 
-def main():
-    filename = "add_item.json"
-    try:
-        pyList = load_from_json_file(filename)
+args = sys.argv[1:]
+List.extend(args)
 
-    except:
-        pyList = []
-
-    pyList += sys.argv[1:0]
-    save_to_json_file(pyList, filename)
+save_to_json_file(List, 'add_item.json')

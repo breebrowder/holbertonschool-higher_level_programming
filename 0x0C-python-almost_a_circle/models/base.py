@@ -2,9 +2,6 @@
 """ Write the first class Base """
 
 
-import json
-
-
 class Base:
 
     __nb_objects = 0

@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-""" Write the first class Base """
+""" Class Base used to manage id attribute in all future classes """
 
 
 class Base:
-
-    __nb_objects = 0
     """ Private class attribute """
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """ Instantiation """

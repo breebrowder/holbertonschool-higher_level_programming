@@ -1,16 +1,8 @@
 #!/usr/bin/python3
+import sys
+j = 0
+trueLength = len(sys.argv)
 if __name__ == "__main__":
-    from sys import argv
-
-    args = len(argv)
-    result = 0
-
-    if (args > 2):
-        for i in range(1, args):
-            argv[i] = int(argv[i])
-            result += argv[i]
-            print(result)
-    elif (args == 1):
-        print(0)
-    else:
-        print(argv[1])
+    for index in range(1, trueLength):
+        j += int(sys.argv[index])
+    print("{:d}".format(j))

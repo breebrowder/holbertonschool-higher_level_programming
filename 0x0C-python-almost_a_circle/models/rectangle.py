@@ -94,3 +94,27 @@ class Rectangle(Base):
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
                                                        self.width, self.height)
+
+    def update(self, *args, **kwargs):
+        """ Assigning key/value argument to attribites """
+        if len(args) != 0:
+            ListofA = ["width", "height", "x", "y", "id"]
+
+            for i, args in enumerate(args):
+                setattr(self, ListofA[i], args[i])
+
+        else:
+            for key, value in kwargs.items():
+                if key is "id" and value is None:
+                    setattr(self, "id", self.id)
+                else:
+                    setattr(self, key, value)
+
+    def to_dictionary(self):
+        """ Returning dict repr of rectangle """
+        return {
+            "width": self.__width,
+            "height": self.__height,
+            "x": self.__x,
+            "y": self.__y,
+            "id": self.id}

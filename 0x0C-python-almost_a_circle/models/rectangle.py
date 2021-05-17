@@ -4,10 +4,10 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """ Class constructor; defining private instance attr """
+    """ New class that inherited Base """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-
+        """ Class constructor; defining private instance attr """
         self.width = width
         self.height = height
         self.x = x
@@ -80,6 +80,7 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """ Returning value of Rect instance """
         squared_x2 = self.__height * self.__width
         return squared_x2
 

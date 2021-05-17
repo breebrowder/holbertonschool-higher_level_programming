@@ -100,7 +100,7 @@ class Rectangle(Base):
         if len(args) != 0:
             ListofA = ["width", "height", "x", "y", "id"]
 
-            for i, args in enumerate(args):
+            for i, arg in enumerate(args):
                 setattr(self, ListofA[i], args[i])
 
         else:
@@ -113,8 +113,8 @@ class Rectangle(Base):
     def to_dictionary(self):
         """ Returning dict repr of rectangle """
         return {
+            "id": self.id,
             "width": self.__width,
             "height": self.__height,
             "x": self.__x,
-            "y": self.__y,
-            "id": self.id}
+            "y": self.__y}

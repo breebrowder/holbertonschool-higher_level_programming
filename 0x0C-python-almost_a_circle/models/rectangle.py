@@ -5,7 +5,7 @@ from models.base import Base
 
 class Rectangle(Base):
 
-    """ Class constructor; defining private instance attributes """
+    """Class Rectangle; constructor defining private instance attributes """
 
     def __init__(self, width, height, x=0, y=0, id=None):
 

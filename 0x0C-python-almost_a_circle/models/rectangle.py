@@ -98,7 +98,7 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """ Assigning key/value argument to attribites """
         if len(args) != 0:
-            ListofA = ["width", "height", "x", "y", "id"]
+            ListofA = ["id", "width", "height", "x", "y"]
 
             for i, arg in enumerate(args):
                 setattr(self, ListofA[i], args[i])
@@ -114,7 +114,7 @@ class Rectangle(Base):
         """ Returning dict repr of rectangle """
         return {
             "id": self.id,
-            "width": self.__width,
-            "height": self.__height,
-            "x": self.__x,
-            "y": self.__y}
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y}

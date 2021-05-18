@@ -2,7 +2,6 @@
 """ Class Base used to manage id attribute in all future classes """
 
 import json
-from os import path
 
 
 class Base:
@@ -41,6 +40,6 @@ class Base:
     def from_json_string(json_string):
         """ Returning list of the JSON string repr """
         if json_string is None or len(json_string) == 0:
-            return "[]"
+            return []
         else:
             return json.loads(json_string)

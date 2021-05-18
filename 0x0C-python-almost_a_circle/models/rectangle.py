@@ -96,7 +96,7 @@ class Rectangle(Base):
                                                        self.width, self.height)
 
     def update(self, *args, **kwargs):
-        """ Assigning key/value argument to attribites """
+        """ Assigning key/value argument to attributes """
         if len(args) != 0:
             ListofA = ["id", "width", "height", "x", "y"]
 

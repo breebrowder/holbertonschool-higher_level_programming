@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """ Class Base used to manage id attribute in all future classes """
 
+import json
+from os import path
+
 
 class Base:
     """ Private class attribute """
@@ -14,3 +17,11 @@ class Base:
             """ Increment objects & assign new value to public inst attr id """
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """ Update class to add static method that returns JSON string repr """
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)

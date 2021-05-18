@@ -48,6 +48,6 @@ class Square(Rectangle):
         """ Returning dict repr of square """
         return {
             "id": self.id,
-            "size": self.__size,
-            "x": self.__x,
-            "y": self.__y}
+            "size": self.size,
+            "x": self.x,
+            "y": self.y}

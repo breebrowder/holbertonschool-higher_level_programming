@@ -69,4 +69,4 @@ class Base:
                 List = cls.from_json_string(f)
             for dict in List:
                 instances.append(cls.create(**dict))
-                return instances
+            return instances

@@ -17,7 +17,7 @@ if __name__ == "__main__":
     cur.execute("SELECT * from states ORDER BY states.id")
     columns = cur.fetchall()
     for column in columns:
-        if row[1].startswith("N"):
+        if column[1].startswith("N"):
             print(column)
 
     # close all cursors

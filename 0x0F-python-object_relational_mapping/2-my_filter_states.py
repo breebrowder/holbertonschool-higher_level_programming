@@ -19,7 +19,6 @@ if __name__ == "__main__":
 
     columns = cur.fetchall()
     for column in columns:
-        if column[1].startswith("N"):
             print(column)
 
     # close all cursors

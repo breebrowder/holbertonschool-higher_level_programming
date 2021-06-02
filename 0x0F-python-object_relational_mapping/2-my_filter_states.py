@@ -14,8 +14,10 @@ if __name__ == "__main__":
         db=sys.argv[3])
 
     cur = db.cursor()
-    cur.execute("SELECT * from states WHERE name LIKE BINARY\
-    "{}" ORDER BY states.id ASC".format(sys.argv[4]))
+    cur.execute(
+        "SELECT * from states WHERE name LIKE BINARY\
+            "{}" ORDER BY states.id ASC"
+        .format(sys.argv[4]))
 
     columns = cur.fetchall()
     for column in columns:

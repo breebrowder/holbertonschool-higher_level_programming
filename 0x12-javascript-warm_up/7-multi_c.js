@@ -7,5 +7,5 @@ if (isNaN(parseInt(x))) {
   console.log('Missing number of occurences');
 }
 for (let i = 0; i < x; i++) {
-  console.log('${str}');
+  console.log(`${str}`);
 }

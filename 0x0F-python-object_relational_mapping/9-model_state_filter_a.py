@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ List all State objects that contain the letter a from the database """
 
+
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import (create_engine)
@@ -14,11 +15,12 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for instance in session.query(State).order_by(State.id).filter
-    (State.name.contains('a')):
+    for instance in session.query(State).order_by(
+            State.id).filter(
+            State.name.contains('a')):
 
         try:
             print("{}: {}".format(instance.id, instance.name))
         except BaseException:
             print("Nothing")
-            session.close()
+    session.close()

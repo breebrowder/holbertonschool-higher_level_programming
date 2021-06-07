@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ Print the first State object from the database hbtn_0e_6_usa """
+""" Script should take 3 args """
 
 from sys import argv
 from model_state import Base, State

@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
 exports.callMeMoby = function (n, thefunction) {
-    let x = 0;
+  let x = 0;
 
-    for (; x < n; x++) {
-	thefunction();
+  for (; x < n; x++) {
+      thefunction();
     }
 };

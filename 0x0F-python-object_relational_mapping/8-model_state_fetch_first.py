@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Print the first State object from the database hbtn_0e_6_usa """
-""" Script should take 3 args """
 
 from sys import argv
 from model_state import Base, State
@@ -18,7 +17,7 @@ if __name__ == '__main__':
     instance = session.query(State).order_by(State.id).first()
 
     try:
-        print("{}:{}".format(instance.id, instance.name))
+        print("{}: {}".format(instance.id, instance.name))
     except BaseException:
         print("Nothing")
     session.close()

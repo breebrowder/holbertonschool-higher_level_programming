@@ -3,7 +3,7 @@
 
 
 from sys import argv
-from model_state import Base, State
+from model_state import State, Base
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 
@@ -21,6 +21,6 @@ if __name__ == '__main__':
 
         try:
             print("{}: {}".format(instance.id, instance.name))
-        except BaseException:
+        except:
             print("Nothing")
     session.close()

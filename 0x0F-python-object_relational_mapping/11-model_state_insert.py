@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" List all State objects that contain the letter a from the database """
+""" Add the State object “Louisiana” to the database hbtn_0e_6_usa """
 
 
 from sys import argv

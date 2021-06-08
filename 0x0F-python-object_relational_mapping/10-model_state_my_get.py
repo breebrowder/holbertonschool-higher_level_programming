@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" List all State objects that contain the letter a from the database """
+""" Print the State object with the name passed as arg from the database """
 
 
 from sys import argv

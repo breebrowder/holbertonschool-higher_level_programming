@@ -3,5 +3,5 @@
 
 
 class LockedCLass:
-    """ LockedClass is our class """
+    """ Module: LockedClass is our class """
     __slots__ = "first_name"

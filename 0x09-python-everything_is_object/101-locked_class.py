@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" Write class that prevents user from dynamically creating new instance """
+""" Module: LockedClass is our class """
 
 
 class LockedCLass:
-    """ Module: LockedClass is our class """
+    """ Write class that prevents user from dynamically creating new inst """
     __slots__ = "first_name"

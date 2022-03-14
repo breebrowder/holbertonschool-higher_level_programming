@@ -4,7 +4,7 @@
 
 1. [Python: Hello World](https://intranet.hbtn.io/projects/231)
 2. [Python: If/else loops, functions](https://intranet.hbtn.io/projects/233)
-3. [Python import & modules](https://intranet.hbtn.io/projects/239)
+3. [Python: import & modules](https://intranet.hbtn.io/projects/239)
 4. [Python: Data Structures, Lists, Tuples](https://intranet.hbtn.io/projects/241)
 5. [Python: More Data Strcutures- Set, Dictionary](https://intranet.hbtn.io/projects/243)
 6. [Python: Exceptions](https://intranet.hbtn.io/projects/245)
